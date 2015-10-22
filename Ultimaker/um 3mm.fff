@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="UM175" version="2015-10-16 14:07:20" app="S3D-Software 3.0.2">
+<profile name="UM175" version="2015-09-22 23:57:16" app="S3D-Software 3.0.2">
   <baseProfile>Ultimaker 2</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
@@ -21,7 +21,7 @@
     <wipeDistance>2</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.2</layerHeight>
+  <layerHeight>0.21</layerHeight>
   <topSolidLayers>8</topSolidLayers>
   <bottomSolidLayers>3</bottomSolidLayers>
   <perimeterOutlines>2</perimeterOutlines>
@@ -46,7 +46,7 @@
   <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
   <skirtOutlines>2</skirtOutlines>
-  <skirtOffset>1</skirtOffset>
+  <skirtOffset>4</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
   <primePillarWidth>12</primePillarWidth>
@@ -97,7 +97,7 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="60"/>
+    <setpoint layer="1" temperature="0"/>
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
@@ -153,7 +153,7 @@
   <celebrationSong>Random Song</celebrationSong>
   <createMB5G>0</createMB5G>
   <postProcessing></postProcessing>
-  <defaultSpeed>3000</defaultSpeed>
+  <defaultSpeed>3600</defaultSpeed>
   <outlineUnderspeed>0.65</outlineUnderspeed>
   <solidInfillUnderspeed>0.7</solidInfillUnderspeed>
   <supportUnderspeed>0.7</supportUnderspeed>
@@ -232,7 +232,7 @@
     <supportInfillPercentage>25</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium">
-    <layerHeight>0.2</layerHeight>
+    <layerHeight>0.21</layerHeight>
     <topSolidLayers>8</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
