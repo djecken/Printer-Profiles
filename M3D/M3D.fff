@@ -1,29 +1,29 @@
 <?xml version="1.0"?>
-<profile name="M3D" version="2015-10-22 15:19:36" app="S3D-Software 3.0.2">
+<profile name="M3D" version="2015-12-30 19:23:55" app="S3D-Software 3.0.2">
   <baseProfile>Ultimaker 2</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
     <toolheadNumber>0</toolheadNumber>
-    <diameter>0.34</diameter>
+    <diameter>0.4</diameter>
     <autoWidth>0</autoWidth>
-    <width>0.45</width>
+    <width>0.4</width>
     <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
-    <retractionDistance>2</retractionDistance>
+    <retractionDistance>1.5</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
-    <retractionZLift>0.1</retractionZLift>
+    <retractionZLift>0</retractionZLift>
     <retractionSpeed>1200</retractionSpeed>
     <useCoasting>0</useCoasting>
-    <coastingDistance>1</coastingDistance>
+    <coastingDistance>1.5</coastingDistance>
     <useWipe>0</useWipe>
     <wipeDistance>2</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.2</layerHeight>
+  <layerHeight>0.3</layerHeight>
   <topSolidLayers>6</topSolidLayers>
-  <bottomSolidLayers>5</bottomSolidLayers>
+  <bottomSolidLayers>6</bottomSolidLayers>
   <perimeterOutlines>2</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
   <startPointOption>1</startPointOption>
@@ -32,9 +32,9 @@
   <startPointOriginZ>300</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>150</firstLayerHeightPercentage>
-  <firstLayerWidthPercentage>150</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+  <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
+  <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+  <firstLayerUnderspeed>1</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftLayers>3</raftLayers>
@@ -42,10 +42,10 @@
   <raftSeparationDistance>0.14</raftSeparationDistance>
   <raftInfill>85</raftInfill>
   <disableRaftBaseLayers>0</disableRaftBaseLayers>
-  <useSkirt>1</useSkirt>
+  <useSkirt>0</useSkirt>
   <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
-  <skirtOutlines>2</skirtOutlines>
+  <skirtOutlines>1</skirtOutlines>
   <skirtOffset>1</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
@@ -62,14 +62,14 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Full Honeycomb</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>20</infillPercentage>
-  <outlineOverlapPercentage>35</outlineOverlapPercentage>
+  <infillPercentage>10</infillPercentage>
+  <outlineOverlapPercentage>65</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>100</infillExtrusionWidthPercentage>
   <minInfillLength>3</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
   <infillAngles>0,120,-120</infillAngles>
   <overlapInfillAngles>0</overlapInfillAngles>
-  <generateSupport>1</generateSupport>
+  <generateSupport>0</generateSupport>
   <supportExtruder>0</supportExtruder>
   <supportInfillPercentage>30</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
@@ -147,7 +147,7 @@
   <postProcessing></postProcessing>
   <defaultSpeed>3000</defaultSpeed>
   <outlineUnderspeed>0.5</outlineUnderspeed>
-  <solidInfillUnderspeed>0.7</solidInfillUnderspeed>
+  <solidInfillUnderspeed>0.5</solidInfillUnderspeed>
   <supportUnderspeed>0.3</supportUnderspeed>
   <rapidXYspeed>2400</rapidXYspeed>
   <rapidZspeed>1002</rapidZspeed>
@@ -171,13 +171,13 @@
   <useRetractionMinTravel>1</useRetractionMinTravel>
   <retractionMinTravel>0.02</retractionMinTravel>
   <retractWhileWiping>0</retractWhileWiping>
-  <onlyWipeOutlines>1</onlyWipeOutlines>
+  <onlyWipeOutlines>0</onlyWipeOutlines>
   <avoidCrossingOutline>1</avoidCrossingOutline>
   <maxMovementDetourFactor>3</maxMovementDetourFactor>
   <toolChangeRetractionDistance>12</toolChangeRetractionDistance>
   <toolChangeExtraRestartDistance>-0.5</toolChangeExtraRestartDistance>
   <toolChangeRetractionSpeed>600</toolChangeRetractionSpeed>
-  <allowThinWallGapFill>0</allowThinWallGapFill>
+  <allowThinWallGapFill>1</allowThinWallGapFill>
   <thinWallAllowedOverlapPercentage>50</thinWallAllowedOverlapPercentage>
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
   <autoConfigureMaterial name="PLA">
@@ -224,12 +224,12 @@
     <supportInfillPercentage>25</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium">
-    <layerHeight>0.2</layerHeight>
+    <layerHeight>0.3</layerHeight>
     <topSolidLayers>6</topSolidLayers>
-    <bottomSolidLayers>5</bottomSolidLayers>
-    <firstLayerHeightPercentage>150</firstLayerHeightPercentage>
+    <bottomSolidLayers>6</bottomSolidLayers>
+    <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>20</infillPercentage>
+    <infillPercentage>10</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="High">
