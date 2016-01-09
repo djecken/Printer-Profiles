@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<profile name="Flash Left" version="2015-08-03 21:15:24" app="S3D-Software 3.0.1">
+<profile name="Flash Left" version="2016-01-07 21:48:06" app="S3D-Software 3.0.2">
   <baseProfile>FlashForge Creator Pro(3)</baseProfile>
-  <printMaterial>PLA</printMaterial>
+  <printMaterial>NinjaFlex</printMaterial>
   <printQuality>Medium</printQuality>
   <printExtruders>Left Extruder Only</printExtruders>
   <extruder name="Right Extruder">
@@ -9,8 +9,8 @@
     <diameter>0.4</diameter>
     <autoWidth>0</autoWidth>
     <width>0.4</width>
-    <extrusionMultiplier>0.9</extrusionMultiplier>
-    <useRetract>1</useRetract>
+    <extrusionMultiplier>1</extrusionMultiplier>
+    <useRetract>0</useRetract>
     <retractionDistance>1</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
     <retractionZLift>0</retractionZLift>
@@ -23,11 +23,11 @@
   <extruder name="Left Extruder">
     <toolheadNumber>1</toolheadNumber>
     <diameter>0.4</diameter>
-    <autoWidth>0</autoWidth>
-    <width>0.4</width>
-    <extrusionMultiplier>0.9</extrusionMultiplier>
-    <useRetract>1</useRetract>
-    <retractionDistance>1.5</retractionDistance>
+    <autoWidth>1</autoWidth>
+    <width>0.48</width>
+    <extrusionMultiplier>1</extrusionMultiplier>
+    <useRetract>0</useRetract>
+    <retractionDistance>1</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
     <retractionZLift>0</retractionZLift>
     <retractionSpeed>1200</retractionSpeed>
@@ -37,9 +37,9 @@
     <wipeDistance>5</wipeDistance>
   </extruder>
   <primaryExtruder>1</primaryExtruder>
-  <layerHeight>0.2</layerHeight>
-  <topSolidLayers>3</topSolidLayers>
-  <bottomSolidLayers>8</bottomSolidLayers>
+  <layerHeight>0.21</layerHeight>
+  <topSolidLayers>8</topSolidLayers>
+  <bottomSolidLayers>4</bottomSolidLayers>
   <perimeterOutlines>2</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
   <startPointOption>2</startPointOption>
@@ -48,7 +48,7 @@
   <startPointOriginZ>300</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>90</firstLayerHeightPercentage>
+  <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   <useRaft>0</useRaft>
@@ -61,7 +61,7 @@
   <useSkirt>1</useSkirt>
   <skirtExtruder>1</skirtExtruder>
   <skirtLayers>1</skirtLayers>
-  <skirtOutlines>2</skirtOutlines>
+  <skirtOutlines>1</skirtOutlines>
   <skirtOffset>4</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
@@ -80,7 +80,7 @@
   <externalInfillPattern>Rectilinear</externalInfillPattern>
   <infillPercentage>20</infillPercentage>
   <outlineOverlapPercentage>65</outlineOverlapPercentage>
-  <infillExtrusionWidthPercentage>300</infillExtrusionWidthPercentage>
+  <infillExtrusionWidthPercentage>120</infillExtrusionWidthPercentage>
   <minInfillLength>5</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
   <infillAngles>45,-45</infillAngles>
@@ -113,8 +113,7 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="230"/>
-    <setpoint layer="2" temperature="240"/>
+    <setpoint layer="1" temperature="240"/>
   </temperatureController>
   <temperatureController name="Heated Build Platform">
     <temperatureNumber>0</temperatureNumber>
@@ -126,7 +125,7 @@
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="2" speed="100"/>
+    <setpoint layer="2" speed="10"/>
   </fanSpeed>
   <blipFanToFullPower>0</blipFanToFullPower>
   <adjustSpeedForCooling>0</adjustSpeedForCooling>
@@ -175,14 +174,14 @@
   <endingGcode>; **** Replicator 1 dual end.gcode ****,M73 P100 ; end build progress,G1 Z150 F1000 ; send Z axis to bottom of machine,M140 S0 T0 ; cool down HBP,M104 S0 T0 ; cool down right extruder,M104 S0 T1 ; cool down left extruder,M127 ; stop blower fan,G162 X Y F3000 ; home XY maximum,M18 ; disable stepper,M72 P1 ; play Ta-Da song,; **** end of end.gcode ****</endingGcode>
   <createX3G>1</createX3G>
   <celebration>1</celebration>
-  <celebrationSong>Random Song</celebrationSong>
+  <celebrationSong>Funky Town</celebrationSong>
   <createMB5G>0</createMB5G>
   <postProcessing></postProcessing>
-  <defaultSpeed>4800</defaultSpeed>
+  <defaultSpeed>1800</defaultSpeed>
   <outlineUnderspeed>0.5</outlineUnderspeed>
-  <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
-  <supportUnderspeed>0.8</supportUnderspeed>
-  <rapidXYspeed>9000</rapidXYspeed>
+  <solidInfillUnderspeed>0.5</solidInfillUnderspeed>
+  <supportUnderspeed>0.3</supportUnderspeed>
+  <rapidXYspeed>7200</rapidXYspeed>
   <rapidZspeed>1200</rapidZspeed>
   <minBridgingArea>50</minBridgingArea>
   <bridgingExtraInflation>0</bridgingExtraInflation>
@@ -197,15 +196,15 @@
   <maxPrintHeight>0</maxPrintHeight>
   <useDiaphragm>0</useDiaphragm>
   <diaphragmLayerInterval>20</diaphragmLayerInterval>
-  <robustSlicing>1</robustSlicing>
+  <robustSlicing>0</robustSlicing>
   <mergeAllIntoSolid>0</mergeAllIntoSolid>
-  <onlyRetractWhenCrossingOutline>1</onlyRetractWhenCrossingOutline>
-  <retractBetweenLayers>1</retractBetweenLayers>
+  <onlyRetractWhenCrossingOutline>0</onlyRetractWhenCrossingOutline>
+  <retractBetweenLayers>0</retractBetweenLayers>
   <useRetractionMinTravel>0</useRetractionMinTravel>
   <retractionMinTravel>3</retractionMinTravel>
   <retractWhileWiping>0</retractWhileWiping>
   <onlyWipeOutlines>1</onlyWipeOutlines>
-  <avoidCrossingOutline>0</avoidCrossingOutline>
+  <avoidCrossingOutline>1</avoidCrossingOutline>
   <maxMovementDetourFactor>3</maxMovementDetourFactor>
   <toolChangeRetractionDistance>12</toolChangeRetractionDistance>
   <toolChangeExtraRestartDistance>-0.5</toolChangeExtraRestartDistance>
@@ -232,12 +231,12 @@
     </extruder>
     <extruder name="Left Extruder">
       <toolheadNumber>1</toolheadNumber>
-      <diameter>0.4</diameter>
-      <autoWidth>0</autoWidth>
-      <width>0.4</width>
-      <extrusionMultiplier>0.9</extrusionMultiplier>
+      <diameter>0.34</diameter>
+      <autoWidth>1</autoWidth>
+      <width>0.41</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
       <useRetract>1</useRetract>
-      <retractionDistance>1.5</retractionDistance>
+      <retractionDistance>1</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
       <retractionZLift>0</retractionZLift>
       <retractionSpeed>1200</retractionSpeed>
@@ -260,16 +259,15 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="230"/>
-      <setpoint layer="2" temperature="240"/>
+      <setpoint layer="1" temperature="235"/>
     </temperatureController>
     <temperatureController name="Heated Build Platform">
       <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>1</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
-      <stabilizeAtStartup>0</stabilizeAtStartup>
-      <setpoint layer="1" temperature="60"/>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="90"/>
     </temperatureController>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
@@ -531,9 +529,9 @@
     <supportInfillPercentage>25</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium">
-    <layerHeight>0.2</layerHeight>
-    <topSolidLayers>3</topSolidLayers>
-    <bottomSolidLayers>8</bottomSolidLayers>
+    <layerHeight>0.21</layerHeight>
+    <topSolidLayers>8</topSolidLayers>
+    <bottomSolidLayers>4</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
